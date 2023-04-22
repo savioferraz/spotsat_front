@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Navigate } from "react-router-dom";
-import Header from "../components/Header/Header";
+import Header from "../components/Header";
 
 function renderError() {
   localStorage.clear("token");

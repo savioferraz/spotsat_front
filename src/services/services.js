@@ -1,17 +1,15 @@
 import axios from "axios";
 import { createHeaders } from "./createHeaders";
 
-const BASE_URL = process.env.REACT_APP_API_BASE_URL;
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 function createUser(body) {
-  const headers = createHeaders();
-  const request = axios.post(`${BASE_URL}/users/create`, body, headers);
+  const request = axios.post(`${BASE_URL}/users/create`, body);
   return request;
 }
 
 function login(body) {
-  const headers = createHeaders();
-  const request = axios.post(`${BASE_URL}/users/login`, body, headers);
+  const request = axios.post(`${BASE_URL}/users/login`, body);
   return request;
 }
 
