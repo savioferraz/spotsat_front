@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function Button({ children, width = "100%", height = "46px", onClick }) {
+export default function Button({ children, width = "50%", height = "32px", onClick }) {
   return (
     <Wraped width={width} height={height} onClick={onClick}>
       {children}
@@ -20,15 +20,16 @@ const Wraped = styled.button`
   text-align: center;
   border: none;
   border-radius: 5px;
-  margin: 3px;
-  ion-icon {
-    font-size: 32px;
+  margin: 6px;
+  box-shadow: 4px 4px 8px #888888;
+  transition-duration: 0.4s;
+  opacity: 0.6;
+
+  :hover {
+    opacity: 1;
   }
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 80%;
-    text-align: left;
+  :active {
+    box-shadow: 2px 2px 4px #888888;
+    transform: translateY(4px);
   }
 `;
