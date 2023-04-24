@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Dashboard from "../components/Dashboard";
-import Sidebar from "../components/Sidebar";
 import { postShape } from "../services/services";
 import Input from "../assets/common/Input";
 import Button from "../assets/common/Button";
@@ -49,7 +48,6 @@ export default function NewShape() {
 
   return (
     <Dashboard>
-      <Sidebar />
       <Wrapper>
         <h1>Novo Polígono</h1>
         <form onSubmit={handleForm}>
@@ -113,6 +111,11 @@ const Wrapper = styled.div`
   width: 980px;
   height: 680px;
   margin: auto;
+  font-family: "Roboto", sans-serif;
+
+  form {
+    text-align: center;
+  }
 `;
 
 const Container = styled.div`

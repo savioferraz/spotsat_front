@@ -4,7 +4,6 @@ import Button from "../assets/common/Button";
 import Input from "../assets/common/Input";
 import { createUser } from "../services/services";
 import styled from "styled-components";
-import Dashboard from "../components/Dashboard";
 
 export default function SignUp() {
   const navigate = useNavigate();
@@ -64,11 +63,31 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ff0000;
+  font-family: "Roboto", sans-serif;
   height: 600px;
   width: 450px;
 
   a {
     margin: 8px;
   }
+
+  form {
+    text-align: center;
+  }
+`;
+
+const Dashboard = styled.div`
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 1280px;
+  height: 720px;
+  box-shadow: 2px 2px 16px #abaeb8;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

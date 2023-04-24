@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Map from "../components/Map";
 import { getUserShapes } from "../services/services";
 import Dashboard from "../components/Dashboard";
-import Sidebar from "../components/Sidebar";
 
 export default function UserMap() {
   const [shapes, setShapes] = useState([]);
@@ -16,7 +15,6 @@ export default function UserMap() {
 
   return (
     <Dashboard>
-      <Sidebar />
       <Wrapper>
         <Map shapes={shapes} />
       </Wrapper>

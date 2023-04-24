@@ -1,7 +1,13 @@
 import styled from "styled-components";
+import Sidebar from "./Sidebar";
 
 export default function Dashboard({ children }) {
-  return <Wrapper>{children}</Wrapper>;
+  return (
+    <Wrapper>
+      <Sidebar />
+      {children}
+    </Wrapper>
+  );
 }
 
 const Wrapper = styled.div`
@@ -16,6 +22,5 @@ const Wrapper = styled.div`
   box-shadow: 2px 2px 16px #abaeb8;
   border-radius: 12px;
   display: flex;
-  align-items: center;
-  text-align: center;
+  flex-direction: row;
 `;

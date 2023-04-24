@@ -1,13 +1,16 @@
 import styled from "styled-components";
 import Dashboard from "../components/Dashboard";
-import Sidebar from "../components/Sidebar";
 
 export default function Home() {
   return (
     <Dashboard>
-      <Sidebar />
+      <Wrapper></Wrapper>
     </Dashboard>
   );
 }
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;

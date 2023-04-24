@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Dashboard from "../components/Dashboard";
-import Sidebar from "../components/Sidebar";
 import ShapeBox from "../components/ShapeBox";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -28,7 +27,6 @@ export default function UserShapes() {
 
   return (
     <Dashboard>
-      <Sidebar />
       <Wrapper>
         {shapes.length === 0 ? (
           <p>Você ainda não tem nenhum polígono</p>
