@@ -40,6 +40,8 @@ Você pode executar a aplicação em modo de desenvolvimento com o comando "npm 
 - React-Leaflet
 - Axios
 - Styled Components
+- Docker
+- Nginx
 
 ## Licença
 
